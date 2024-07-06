@@ -1,0 +1,33 @@
+@use "sass:math";
+@import "fonts";
+@import "reset";
+@import "variables";
+@import "functions";
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: $bgMainColor;
+}
+.wrapper {
+    min-height: 100%;
+    overflow: clip;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper > main {
+    flex-grow: 1;
+}
+[class$="__container"] {
+    max-width: toRem($containerWidth);
+    padding-inline: toRem(10);
+    margin: 0 auto;
+    @media (max-width: $tablet) {
+        padding-inline: toRem(20);
+    }
+}
+
+@import "header";
+@import "main";
+@import "footer";

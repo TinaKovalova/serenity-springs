@@ -3,7 +3,7 @@
     width: 100%;
     top: toRem(50);
     font-family: "Playfair Display", serif;
-    position: relative;
+
     // &::before {
     //     content: "";
     //     position: absolute;
@@ -30,7 +30,7 @@
         z-index: 2;
         justify-content: space-between;
         gap: toRem(30);
-        transform: translateX(100%);
+
         transition: transform 0.5s;
         @media (max-width: $tablet) {
             position: fixed;
@@ -40,9 +40,9 @@
             height: 100svh;
             overflow-y: auto;
             flex-direction: column;
-            // justify-content: center;
             align-items: flex-end;
             padding: toRem(130) toRem(40) toRem(40);
+            transform: translateX(100%);
             background-color: $bgMainColor;
         }
         &.opened {

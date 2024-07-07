@@ -1,0 +1,107 @@
+.greeting {
+    background:
+        linear-gradient(0deg, rgba(255, 179, 179, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
+        url("../img/hero.jpg") lightgray 0 70% / cover no-repeat;
+    // .greeting__container
+
+    &__container {
+        min-height: toRem(874);
+        padding-block-start: toRem(120);
+        padding-block-end: toRem(15);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        row-gap: toRem(29);
+        @media (max-width: $tablet) {
+            row-gap: toRem(52);
+        }
+    }
+
+    // .greeting__content
+
+    &__content {
+        max-width: toRem(636);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: toRem(20);
+        @media (max-width: $tablet) {
+            row-gap: toRem(30);
+        }
+    }
+
+    // .greeting__title
+
+    &__title {
+        font-family: "Playfair Display";
+        font-style: italic;
+        @include adaptiveValue("font-size", 106.17, 63.787);
+        // font-size:   toRem(106.17);
+        font-weight: 900;
+        line-height: 1.2;
+
+        letter-spacing: toRem(3.18);
+        text-align: center;
+        span:nth-child(1) {
+            line-height: 1.05;
+        }
+        span:nth-child(2) {
+            display: block;
+            color: transparent;
+            -webkit-text-stroke-width: toRem(1.4);
+            -webkit-text-stroke-color: #fff;
+            @include adaptiveValue("font-size", 231.65, 139.171);
+            // font-size: toRem(231.65);
+            letter-spacing: toRem(6.949);
+            line-height: 0.6;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: toRem(5);
+        }
+    }
+
+    // .greeting__text
+
+    &__text {
+        font-size: toRem(18);
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        line-height: 1.55; /* 28/18 */
+        span {
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+
+    // .greeting__link
+
+    &__link {
+        font-size: toRem(15);
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: toRem(0.3);
+        text-transform: uppercase;
+        color: #343434;
+        padding: toRem(13) toRem(60);
+        border-radius: toRem(3);
+        background: #fff;
+        transition: all 0.3s ease-in-out;
+        @media (any-hover) {
+            &:hover {
+                background-color: $hoverColor;
+                color: #fff;
+            }
+        }
+    }
+
+    // .greeting__decor
+
+    &__decor {
+        width: toRem(25);
+        height: toRem(98);
+        fill: #fff;
+    }
+}

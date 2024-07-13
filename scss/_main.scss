@@ -152,4 +152,35 @@
             font-style: italic;
         }
     }
+    &__ticker {
+        width: 100%;
+        min-height: toRem(229);
+        display: flex;
+        align-items: center;
+        background: url("../img/ticker-bg.png") center/toRem(416) toRem(229) no-repeat;
+        @media (max-width: $mobile) {
+            height: toRem(194);
+            background-size: toRem(352) toRem(194);
+        }
+    }
+}
+.ticker {
+    // .ticker__text
+
+    &__text {
+        font-weight: 200;
+        line-height: 1.2;
+        @include adaptiveValue("font-size", 72, 50);
+        text-wrap: nowrap;
+        transform: translateX(100%);
+        animation: textMove 40s linear infinite forwards;
+        @keyframes textMove {
+            from {
+                transform: translateX(100%);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+    }
 }

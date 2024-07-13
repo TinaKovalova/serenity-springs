@@ -10,7 +10,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
         gap: toRem(30);
         @media (max-width: $tablet) {
             flex-direction: column;
@@ -27,8 +26,10 @@
     // .footer__logo
 
     &__logo {
+        margin-left: -13%;
         @media (max-width: $tablet) {
             order: -1;
+            margin-left: 0;
         }
     }
 

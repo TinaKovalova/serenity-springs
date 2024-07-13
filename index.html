@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <base target="_blank">
-    </base>
+    <!-- <base target="_blank">
+    </base> -->
     <link rel="stylesheet" href="css/style.css">
     <title>Serenity Springs</title>
 </head>
@@ -21,49 +21,46 @@
                     <nav class="navigation">
                         <ul class="navigation__list">
                             <li class="navigation__item">
-                                <a href="#" class="navigation__link">ABOUT US</a>
+                                <a href="#about" class="navigation__link">ABOUT US</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__link">Our Services</a>
+                                <a href="#services" target="_top" class="navigation__link">Our Services</a>
                             </li>
                             <li class="navigation__item">
-                                <a href="#" class="navigation__link">RESERVATION</a>
+                                <a href="#reservation" target="_parent" class="navigation__link">RESERVATION</a>
                             </li>
                         </ul>
                     </nav>
                     <div class="social-networks">
                         <ul class="social-networks__list">
                             <li class="social-networks__item">
-                                <a href="#" class="social-networks__link" target="_blank">
+                                <a href="https://www.instagram.com/" class="social-networks__link" target="_blank">
                                     <svg class="social-networks__img">
                                         <use href="img/icons/icons.svg#icon-s-instagram"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-networks__item">
-                                <a href="#" class="social-networks__link" target="_blank">
+                                <a href="https://x.com/" class="social-networks__link" target="_blank">
                                     <svg class="social-networks__img">
                                         <use href="img/icons/icons.svg#icon-s-twitter"></use>
                                     </svg>
                                 </a>
                             </li>
                             <li class="social-networks__item">
-                                <a href="#" class="social-networks__link" target="_blank">
+                                <a href="https://www.facebook.com" class="social-networks__link" target="_blank">
                                     <svg class="social-networks__img">
                                         <use href="img/icons/icons.svg#icon-s-facebook"></use>
                                     </svg>
                                 </a>
                             </li>
                         </ul>
-
                     </div>
                 </div>
                 <div class="burger">
                     <span></span>
                 </div>
             </div>
-
-
         </header>
         <main class="page">
             <section class="greeting">
@@ -79,7 +76,7 @@
                     </svg>
                 </div>
             </section>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__container">
                     <h2 class="about__title section-title">ABOUT US</h2>
                     <p class="about__text"><span>At Serenity Springs</span>, we believe that everyone deserves a little
@@ -95,61 +92,54 @@
                         ...</div>
                 </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="services__container">
                     <svg class="services__decor">
                         <use href="img/icons/icons.svg#icon-decore-2"></use>
                     </svg>
                     <h2 class="services__title section-title">Our Services</h2>
                     <dl class="services__list list-services">
-                        <dl class="list-services__item">
-                            <dt class="list-services__service">
-                                <a href="#" class="list-services__link">Massage Therapy</a>
-                            </dt>
-                            <dd class="list-services__description">
-                                Whether you're looking to relax, alleviate muscle tension, or reduce stress, our skilled
-                                massage therapists will
-                                customize a treatment to meet your unique needs. Choose from a variety of massage styles
-                                including Swedish, deep tissue,
-                                hot stone, and more.
-                            </dd>
-                        </dl>
-                        <dl class="list-services__item">
-                            <dt class="list-services__service">
-                                <a href="#" class="list-services__link">Anti-aging Facials</a>
-                            </dt>
-                            <dd class="list-services__description">
-                                Our experienced estheticians use only the finest products to nourish, hydrate, and
-                                revitalize your skin. From anti-aging
-                                treatments to acne-fighting facials, we offer a range of options to help you achieve
-                                healthy, glowing skin.
-                            </dd>
-                        </dl>
-                        <dl class="list-services__item">
-                            <dt class="list-services__service">
-                                <a href="#" class="list-services__link">Body Treatments</a>
-                            </dt>
-                            <dd class="list-services__description">
-                                Our indulgent body treatments are designed to detoxify, exfoliate, and hydrate your
-                                skin, leaving you feeling renewed
-                                and refreshed. Choose from a variety of options including body scrubs, wraps, and more.
-                            </dd>
-                        </dl>
-                        <dl class="list-services__item">
-                            <dt class="list-services__service">
-                                <a href="#" class="list-services__link">Wellness Services</a>
-                            </dt>
-                            <dd class="list-services__description">
-                                We believe in taking a holistic approach to wellness, which is why we offer a variety of
-                                services that promote total
-                                body wellness. From acupuncture to reiki, our skilled practitioners will help you
-                                achieve optimal health and wellbeing.
-                            </dd>
-                        </dl>
+                        <dt class="list-services__service">
+                            <a href="#" class="list-services__link">Massage Therapy</a>
+                        </dt>
+                        <dd class="list-services__description">
+                            Whether you're looking to relax, alleviate muscle tension, or reduce stress, our skilled
+                            massage therapists will
+                            customize a treatment to meet your unique needs. Choose from a variety of massage styles
+                            including Swedish, deep tissue,
+                            hot stone, and more.
+                        </dd>
+                        <dt class="list-services__service">
+                            <a href="#" class="list-services__link">Anti-aging Facials</a>
+                        </dt>
+                        <dd class="list-services__description">
+                            Our experienced estheticians use only the finest products to nourish, hydrate, and
+                            revitalize your skin. From anti-aging
+                            treatments to acne-fighting facials, we offer a range of options to help you achieve
+                            healthy, glowing skin.
+                        </dd>
+                        <dt class="list-services__service">
+                            <a href="#" class="list-services__link">Body Treatments</a>
+                        </dt>
+                        <dd class="list-services__description">
+                            Our indulgent body treatments are designed to detoxify, exfoliate, and hydrate your
+                            skin, leaving you feeling renewed
+                            and refreshed. Choose from a variety of options including body scrubs, wraps, and more.
+                        </dd>
+
+                        <dt class="list-services__service">
+                            <a href="#" class="list-services__link">Wellness Services</a>
+                        </dt>
+                        <dd class="list-services__description">
+                            We believe in taking a holistic approach to wellness, which is why we offer a variety of
+                            services that promote total
+                            body wellness. From acupuncture to reiki, our skilled practitioners will help you
+                            achieve optimal health and wellbeing.
+                        </dd>
                     </dl>
                 </div>
             </section>
-            <section class="reservation">
+            <section class="reservation" id="reservation">
                 <div class="reservation__container">
                     <svg class="reservation__decor">
                         <use href="img/icons/icons.svg#icon-decore-3"></use>
@@ -181,13 +171,13 @@
                 <nav class="navigation">
                     <ul class="navigation__list">
                         <li class="navigation__item">
-                            <a href="#" class="navigation__link">ABOUT US</a>
+                            <a href="#about" class="navigation__link">ABOUT US</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#" class="navigation__link">Our Services</a>
+                            <a href="#services" class="navigation__link">Our Services</a>
                         </li>
                         <li class="navigation__item">
-                            <a href="#" class="navigation__link">RESERVATION</a>
+                            <a href="#reservation" class="navigation__link">RESERVATION</a>
                         </li>
                     </ul>
                 </nav>
@@ -197,21 +187,21 @@
                 <div class="social-networks">
                     <ul class="social-networks__list">
                         <li class="social-networks__item">
-                            <a href="#" class="social-networks__link" target="_blank">
+                            <a href="https://www.instagram.com/" class="social-networks__link" target="_blank">
                                 <svg class="social-networks__img">
                                     <use href="img/icons/icons.svg#icon-s-instagram"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-networks__item">
-                            <a href="#" class="social-networks__link" target="_blank">
+                            <a href="https://x.com/" class="social-networks__link" target="_blank">
                                 <svg class="social-networks__img">
                                     <use href="img/icons/icons.svg#icon-s-twitter"></use>
                                 </svg>
                             </a>
                         </li>
                         <li class="social-networks__item">
-                            <a href="#" class="social-networks__link" target="_blank">
+                            <a href="https://www.facebook.com" class="social-networks__link" target="_blank">
                                 <svg class="social-networks__img">
                                     <use href="img/icons/icons.svg#icon-s-facebook"></use>
                                 </svg>

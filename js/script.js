@@ -6,3 +6,8 @@ burgerBtn.addEventListener("click", (e) => {
     navigation.classList.toggle("opened");
 
 })
+navigation.addEventListener("click", (e) => {
+    if (e.target.closest('.navigation__link')){
+         navigation.classList.toggle("opened");
+    }
+})

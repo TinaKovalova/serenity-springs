@@ -281,3 +281,91 @@
         order: 3;
     }
 }
+
+.reservation {
+    // .reservation__container
+
+    &__container {
+        padding-block: toRem(31);
+        @include adaptiveValue("min-height", 820, 760);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        row-gap: toRem(28);
+        @media (min-width: $laptop) {
+            padding-block: toRem(56);
+        }
+    }
+
+    // .reservation__decor
+
+    &__decor {
+        width: toRem(98);
+        height: toRem(29);
+        flex-shrink: 0;
+        fill: $textColorMain;
+        @media (min-width: $laptop) {
+            margin-bottom: toRem(161);
+        }
+    }
+
+    // .reservation__title
+
+    &__title {
+        @extend .about__title;
+    }
+
+    // .reservation__contacts
+
+    &__contacts {
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include adaptiveValue("max-width", 714, 322);
+    @include adaptiveValue("font-size", 23, 18);
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+
+    & > *:first-child {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        @include adaptiveValue("font-size", 48, 36);
+        font-weight: 800;
+        letter-spacing: toRem(0.96);
+        .contacts__link {
+            font-family: "Raleway", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+    }
+
+    & > *:not(:last-child) {
+        margin-bottom: toRem(41);
+        @media (max-width: $tablet) {
+            margin-bottom: toRem(28);
+        }
+    }
+
+    &__location {
+        max-width: toRem(646);
+        text-align: center;
+    }
+
+    // .contacts__link
+
+    &__link {
+        transition: color 0.3s;
+        @media (any-hover) {
+            &:hover {
+                color: $hoverColor;
+            }
+        }
+    }
+}

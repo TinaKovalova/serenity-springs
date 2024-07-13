@@ -60,6 +60,10 @@ textarea {
   width: 100%;
 }
 
+address {
+  font-style: normal;
+}
+
 button,
 select,
 option {
@@ -518,11 +522,11 @@ body {
     padding-block: 3rem 3.25rem;
   }
 }
-.about__title, .services__title {
+.about__title, .reservation__title, .services__title {
   position: relative;
 }
 @media (min-width: 1199.98px) {
-  .about__title, .services__title {
+  .about__title, .reservation__title, .services__title {
     position: absolute;
     left: 0;
     top: 50%;
@@ -760,4 +764,172 @@ body {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
+}
+
+.reservation__container {
+  padding-block: 1.9375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  row-gap: 1.75rem;
+}
+@media (min-width: 81.875em) {
+  .reservation__container {
+    min-height: 51.25rem;
+  }
+}
+@media (min-width: 24.375em) and (max-width: 81.875em) {
+  @supports (min-height: clamp( 47.5rem , 45.910326087rem  +  6.5217391304vw , 51.25rem )) {
+    .reservation__container {
+      min-height: clamp( 47.5rem , 45.910326087rem  +  6.5217391304vw , 51.25rem );
+    }
+  }
+  @supports not (min-height: clamp( 47.5rem , 45.910326087rem  +  6.5217391304vw , 51.25rem )) {
+    .reservation__container {
+      min-height: calc(47.5rem + 3.75 * (100vw - 24.375rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 24.375em) {
+  .reservation__container {
+    min-height: 47.5rem;
+  }
+}
+@media (min-width: 1199.98px) {
+  .reservation__container {
+    padding-block: 3.5rem;
+  }
+}
+.reservation__decor {
+  width: 6.125rem;
+  height: 1.8125rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  fill: #fff;
+}
+@media (min-width: 1199.98px) {
+  .reservation__decor {
+    margin-bottom: 10.0625rem;
+  }
+}
+.contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
+}
+@media (min-width: 81.875em) {
+  .contacts {
+    max-width: 44.625rem;
+  }
+}
+@media (min-width: 24.375em) and (max-width: 81.875em) {
+  @supports (max-width: clamp( 20.125rem , 9.7391304348rem  +  42.6086956522vw , 44.625rem )) {
+    .contacts {
+      max-width: clamp( 20.125rem , 9.7391304348rem  +  42.6086956522vw , 44.625rem );
+    }
+  }
+  @supports not (max-width: clamp( 20.125rem , 9.7391304348rem  +  42.6086956522vw , 44.625rem )) {
+    .contacts {
+      max-width: calc(20.125rem + 24.5 * (100vw - 24.375rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 24.375em) {
+  .contacts {
+    max-width: 20.125rem;
+  }
+}
+@media (min-width: 81.875em) {
+  .contacts {
+    font-size: 1.4375rem;
+  }
+}
+@media (min-width: 24.375em) and (max-width: 81.875em) {
+  @supports (font-size: clamp( 1.125rem , 0.9925271739rem  +  0.5434782609vw , 1.4375rem )) {
+    .contacts {
+      font-size: clamp( 1.125rem , 0.9925271739rem  +  0.5434782609vw , 1.4375rem );
+    }
+  }
+  @supports not (font-size: clamp( 1.125rem , 0.9925271739rem  +  0.5434782609vw , 1.4375rem )) {
+    .contacts {
+      font-size: calc(1.125rem + 0.3125 * (100vw - 24.375rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 24.375em) {
+  .contacts {
+    font-size: 1.125rem;
+  }
+}
+.contacts > *:first-child {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: 800;
+  letter-spacing: 0.06rem;
+}
+@media (min-width: 81.875em) {
+  .contacts > *:first-child {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 24.375em) and (max-width: 81.875em) {
+  @supports (font-size: clamp( 2.25rem , 1.9320652174rem  +  1.3043478261vw , 3rem )) {
+    .contacts > *:first-child {
+      font-size: clamp( 2.25rem , 1.9320652174rem  +  1.3043478261vw , 3rem );
+    }
+  }
+  @supports not (font-size: clamp( 2.25rem , 1.9320652174rem  +  1.3043478261vw , 3rem )) {
+    .contacts > *:first-child {
+      font-size: calc(2.25rem + 0.75 * (100vw - 24.375rem) / 57.5);
+    }
+  }
+}
+@media (max-width: 24.375em) {
+  .contacts > *:first-child {
+    font-size: 2.25rem;
+  }
+}
+.contacts > *:first-child .contacts__link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.contacts > *:not(:last-child) {
+  margin-bottom: 2.5625rem;
+}
+@media (max-width: 991.98px) {
+  .contacts > *:not(:last-child) {
+    margin-bottom: 1.75rem;
+  }
+}
+.contacts__location {
+  max-width: 40.375rem;
+  text-align: center;
+}
+.contacts__link {
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+@media (any-hover) {
+  .contacts__link:hover {
+    color: #7d5757;
+  }
 }

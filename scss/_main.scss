@@ -1,3 +1,9 @@
+.section-title {
+    font-size: toRem(14);
+    font-weight: 600;
+    line-height: 1.14;
+    text-transform: capitalize;
+}
 .greeting {
     background:
         linear-gradient(0deg, rgba(255, 179, 179, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%),
@@ -103,5 +109,47 @@
         width: toRem(25);
         height: toRem(98);
         fill: #fff;
+    }
+}
+.about {
+    // .about__container
+
+    &__container {
+        padding-block: toRem(90);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: toRem(42);
+        @media (max-width: $tablet) {
+            padding-block: toRem(48) toRem(52);
+        }
+    }
+    // .about__title
+
+    &__title {
+        position: relative;
+        @media (min-width: $laptop) {
+            position: absolute;
+            left: 0;
+            top: calc(50%);
+            transform: translateY(-50%);
+            writing-mode: vertical-lr;
+            transform: rotate(180deg);
+        }
+    }
+
+    // .about__text
+
+    &__text {
+        max-width: toRem(856);
+        @include adaptiveValue("text-indent", 177, 80);
+        font-weight: 300;
+        @include adaptiveValue("font-size", 38, 28);
+        line-height: 1.26;
+        span {
+            font-weight: 500;
+            font-style: italic;
+        }
     }
 }

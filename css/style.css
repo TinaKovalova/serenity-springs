@@ -127,6 +127,7 @@ body {
   left: 0;
   font-family: "Playfair Display", serif;
   z-index: 3;
+  overflow-x: hidden;
 }
 .header::before {
   content: "";
